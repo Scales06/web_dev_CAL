@@ -6,9 +6,6 @@ h1
     font-family: "Lilita One", serif;
     font-weight: 400;
     font-style: normal;
-}
-
-#no_margin_title{
     margin-bottom: 0;
 }
 
@@ -17,6 +14,11 @@ h2{
     font-family: "Lilita One", serif;
     font-weight: 400;
     font-style: normal;
+}
+
+.display_block{
+    display: block;
+    margin-top: 5px;
 }
 
 a {
@@ -51,20 +53,14 @@ footer{
     background-color: rgb(121, 206, 255);
     display: inline-block;
     padding: 10px;
+    margin-bottom: 30px;
 }
 
-#less_bottom_padding{
-    padding-bottom: 0%;
-}
 
-/*#make_footer_bottom{
-    position: absolute;
-    bottom: 0;
-    left: 50%; 
-    transform: translateX(-50%); 
-    text-align: center;
+#make_ruler_bottom{
+   margin-top: 100px;
+   margin-bottom: 30px;
 }
-*/
 
 /*#make_ruler_bottom{
     position: absolute;
