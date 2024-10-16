@@ -139,3 +139,8 @@ a {
     transform: scale(1.2);
     }
 }
+
+li{
+    padding-left: 20px;
+    padding-right: 60px;
+}
