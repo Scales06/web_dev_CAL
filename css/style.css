@@ -62,3 +62,101 @@ footer{
    margin-bottom: 30px;
 }
 
+header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.fade-in {
+    opacity: 0;
+    animation: fadeIn 5s forwards;
+}
+
+@keyframes fadeIn {
+    to {
+        opacity: 1;
+    }
+}
+
+/* Here's the animation for the user tab*/
+
+summary {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.slide-in {
+    transform: translateX(-100%);
+    animation: slideIn 2.5s forwards;
+}
+
+@keyframes slideIn {
+    to {
+        transform: translateX(0);
+    }
+}
+
+/*Here's the animation for the title*/
+
+header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.hover-scale {
+    transition: transform 0.3s ease;
+}
+
+.hover-scale:hover {
+    transform: scale(1.2);
+}
+
+/* Here's the animation for sub headings*/
+h4 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.hover-scale {
+    transition: transform 0.3s ease;
+}
+
+.hover-scale:hover {
+    transform: scale(1.2);
+}
+
+/* Here's the animation for the footer*/
+
+footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.hover-scale {
+    transition: transform 0.3s ease;
+}
+
+.hover-scale:hover {
+    transform: scale(1.2);
+}
+
+/*Here's the animation for the divs*/
+div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.hover-scale {
+    transition: transform 0.3s ease;
+}
+
+.hover-scale:hover {
+    transform: scale(1.2);
+}
