@@ -1,5 +1,4 @@
-h1
-{
+h1 {
     background-color: rgb(121, 206, 255);
     display: inline-block;
     padding: 0.5vw;
@@ -9,34 +8,34 @@ h1
     margin-bottom: 0;
 }
 
-h2{
+h2 {
     color: green;
     font-family: "Lilita One", serif;
     font-weight: 400;
     font-style: normal;
 }
 
-.display_block{
+.display_block {
     display: block;
     margin-top: 0.5vh;
 }
 
-.display_block:hover{
+.display_block:hover {
     transition: transform 0.3s ease;
     transform: scale(1.2);
 
 }
 
 a {
-    color:rgb(220, 20, 60);
+    color: rgb(220, 20, 60);
     text-decoration: none;
 }
 
 a:visited {
-    color:crimson;
+    color: crimson;
 }
 
-a:hover{
+a:hover {
     color: rgb(300, 100, 140);
 
 }
@@ -44,16 +43,16 @@ a:hover{
 img {
     border: 0.4vh solid rgb(255, 255, 255);
     border: 0.3vh solid black;
-   
+
 }
 
-body{
+body {
     text-align: center;
-    background-image: linear-gradient(rgb(255, 255, 255),rgb(163, 209, 255));
+    background-image: linear-gradient(rgb(255, 255, 255), rgb(163, 209, 255));
     min-height: 100vh;
 }
 
-footer{
+footer {
     background-color: rgb(121, 206, 255);
     display: inline-block;
     padding: 1vh;
@@ -64,18 +63,18 @@ footer{
 }
 
 
-#make_ruler_bottom{
-   margin-top: 10vh;
-   margin-bottom: 3vh;
+#make_ruler_bottom {
+    margin-top: 10vh;
+    margin-bottom: 3vh;
 }
 
 header {
     display: flex;
     justify-content: center;
     align-items: center;
-    transform: translateY(-10px); 
-    
-    
+    transform: translateY(-10px);
+
+
 }
 
 .fade-in {
@@ -130,17 +129,17 @@ div {
     align-items: center;
 }
 
-a {  
-     .hover-scale {
-    transition: transform 0.3s ease;
+a {
+    .hover-scale {
+        transition: transform 0.3s ease;
     }
 
     .hover-scale:hover {
-    transform: scale(1.2);
+        transform: scale(1.2);
     }
 }
 
-li{
+li {
     padding-left: 1vw;
     padding-right: 6vw;
 }
