@@ -135,6 +135,29 @@ li {
     padding-right: 3vw;
 }
 
-#morespecial {
-    color: antiquewhite;
+/* Styling the Add to Cart button */
+.add-to-cart {
+    background-color: #ff5722; /* Bright, eye-catching color */
+    color: #ffffff; /* White text */
+    font-size: 16px; /* Adjust font size as needed */
+    font-family: 'Lilita One', cursive; /* Using the imported font */
+    padding: 10px 20px; /* Padding for a larger button */
+    border: none; /* Remove default border */
+    border-radius: 5px; /* Rounded corners */
+    cursor: pointer; /* Pointer cursor for interactivity */
+    transition: transform 0.2s ease, background-color 0.2s ease;
 }
+
+/* Hover effect */
+.add-to-cart:hover {
+    background-color: #e64a19; /* Darker shade on hover */
+    transform: scale(1.05); /* Slightly larger on hover */
+}
+
+/* Active (click) effect */
+.add-to-cart:active {
+    transform: scale(0.95); /* Slightly smaller on click */
+    background-color: #d84315; /* Even darker shade */
+}
+
+
