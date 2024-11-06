@@ -1,5 +1,5 @@
 h1 {
-    background-color: rgb(121, 206, 255);
+    background-color: rgb(0, 0, 0);
     display: inline-block;
     padding: 0.5vw;
     font-family: "Lilita One", serif;
@@ -27,12 +27,12 @@ h2 {
 }
 
 a {
-    color: rgb(220, 20, 60);
+    color: rgb(255, 255, 255);
     text-decoration: none;
 }
 
 a:visited {
-    color: crimson;
+    color: rgb(255, 255, 255);
 }
 
 a:hover {
@@ -53,13 +53,14 @@ body {
 }
 
 footer {
-    background-color: rgb(121, 206, 255);
+    background-color: rgb(0, 0, 0);
     display: inline-block;
     padding: 1vh;
     margin-bottom: 3vh;
     display: flex;
     justify-content: center;
     align-items: center;
+    color:rgb(255, 255, 255);
 }
 
 
@@ -132,4 +133,8 @@ div {
 li {
     padding-left: 1vw;
     padding-right: 3vw;
+}
+
+#morespecial {
+    color: antiquewhite;
 }
