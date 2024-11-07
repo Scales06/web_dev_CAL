@@ -37,7 +37,6 @@ a:visited {
 
 a:hover {
     color: rgb(300, 100, 140);
-
 }
 
 img {
@@ -159,5 +158,4 @@ li {
     transform: scale(0.95); /* Slightly smaller on click */
     background-color: #d84315; /* Even darker shade */
 }
-
 
