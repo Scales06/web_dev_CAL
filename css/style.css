@@ -1,5 +1,5 @@
 h1 {
-    background-color: rgb(0, 0, 0);
+    background-color: #000000;
     display: inline-block;
     padding: 0.5vw;
     font-family: "Lilita One", serif;
@@ -18,6 +18,7 @@ h2 {
 .display_block {
     display: block;
     margin-top: 0.5vh;
+   font-size: 1.4rem;
 }
 
 .display_block:hover {
@@ -27,12 +28,12 @@ h2 {
 }
 
 a {
-    color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
     text-decoration: none;
 }
 
 a:visited {
-    color: rgb(255, 255, 255);
+    color: rgb(255, 0, 221); 
 }
 
 a:hover {
@@ -73,7 +74,7 @@ header {
     justify-content: center;
     align-items: center;
     transform: translateY(-10px);
-
+    color: white;
 
 }
 
@@ -99,6 +100,8 @@ summary {
 .slide-in {
     transform: translateX(-100%);
     animation: slideIn 2.5s forwards;
+    font-size: 1.8rem;
+    
 }
 
 @keyframes slideIn {
@@ -115,14 +118,14 @@ summary {
     transform: scale(1.2);
 }
 
-/* Here's the animation for sub headings*/
+
 h4 {
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-/*Here's the animation for the divs*/
+
 div {
     display: flex;
     justify-content: center;
@@ -134,28 +137,66 @@ li {
     padding-right: 3vw;
 }
 
-/* Styling the Add to Cart button */
 .add-to-cart {
-    background-color: #ff5722; /* Bright, eye-catching color */
-    color: #ffffff; /* White text */
-    font-size: 16px; /* Adjust font size as needed */
-    font-family: 'Lilita One', cursive; /* Using the imported font */
-    padding: 10px 20px; /* Padding for a larger button */
-    border: none; /* Remove default border */
-    border-radius: 5px; /* Rounded corners */
-    cursor: pointer; /* Pointer cursor for interactivity */
+    background-color: #ff5722; 
+    color: #ffffff; 
+    font-size: 19px; 
+    font-family: 'Lilita One', cursive; 
+    padding: 20px 30px; 
+    border: none; 
+    border-radius: 5px; 
+    cursor: pointer;
     transition: transform 0.2s ease, background-color 0.2s ease;
+    position: relative;
+    top: 1rem;
 }
 
-/* Hover effect */
 .add-to-cart:hover {
-    background-color: #e64a19; /* Darker shade on hover */
-    transform: scale(1.05); /* Slightly larger on hover */
+    background-color: #e64a19; 
+    transform: scale(1.05); 
 }
 
-/* Active (click) effect */
 .add-to-cart:active {
-    transform: scale(0.95); /* Slightly smaller on click */
-    background-color: #d84315; /* Even darker shade */
+    transform: scale(0.95);
+    background-color: #d84315; 
 }
 
+a.no-visited-style:visited {
+    color: white;
+}
+
+.fixed-size {
+    width: 30em;   
+    height: 20em; 
+    object-fit: cover; 
+}
+
+
+.prev,
+.next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+}
+
+.prev {
+    left: 30rem;
+    top: 20rem; 
+}
+
+.next {
+    right: 30rem;
+    top: 20rem; 
+}
+
+#profilepic {
+    border-radius: 14rem;
+    border-style:double;
+    width: 10rem;
+    height: 10rem;
+}
