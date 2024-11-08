@@ -1,6 +1,7 @@
 @media only screen and (max-width: 600px) {
+    
     img{
-        max-width: 60%;
+        max-width: 60vw;
         height: auto;
         display: block;
         margin: 0 auto;
@@ -31,9 +32,6 @@
     cursor: pointer;
 }
 }
-
-
-
 
 
 h1 {
@@ -298,8 +296,10 @@ a.no-visited-style:visited {
 }
 
 .fixed-size {
-    width: 30em;   
-    height: 20em; 
+    width: 30em;
+    max-width: 80vw;
+    height: 20em;
+    max-height: 50vw;
     object-fit: cover; 
 }
 
@@ -329,5 +329,12 @@ a.no-visited-style:visited {
     border-radius: 14rem;
     border-style:double;
     width: 10rem;
-    height: 10rem;
+    max-width: 60vw;
+    height: auto;
+}
+
+textarea {
+    max-width: 80%;
+    font-size: 16px;  /* Set default font size */
+    padding: 10px;    /* Padding inside the textarea */
 }
