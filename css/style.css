@@ -93,6 +93,7 @@ body {
     text-align: center;
     background-image: linear-gradient(rgb(255, 255, 255), rgb(163, 209, 255));
     min-height: 100vh;
+    
 }
 
 footer {
@@ -254,10 +255,10 @@ li {
 
 .product-item img {
     width: 100%;
-    height: auto;
+    height: 100%;
     border-radius: 10px;
     transition: transform 0.3s;
-    margin-bottom: 10px; /* Adds space between image and text */
+    margin-bottom: 10px; 
 }
 .product-item img:hover {
     transform: scale(1.1);
@@ -335,6 +336,26 @@ a.no-visited-style:visited {
 
 textarea {
     max-width: 80%;
-    font-size: 16px;  /* Set default font size */
-    padding: 10px;    /* Padding inside the textarea */
+    font-size: 16px;  
+    padding: 10px;   
 }
+
+.background-fade {
+    
+    background-image: url('../media/basket-icon.png');
+ 
+    width: 100vw;
+    height: 100vh;
+    background-repeat: no-repeat;
+  }
+
+  #background-page {
+    background-image: 
+        linear-gradient(to bottom, rgb(255, 255, 255), rgb(163, 209, 255)),
+        url('../media/basket-icon.png');
+    background-repeat:no-repeat;
+    background-position: right 100px; 
+    background-color: rgba(255, 255, 255, 0.656); 
+    background-blend-mode:color;
+}
+
