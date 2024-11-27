@@ -48,8 +48,35 @@
         </p>
     </article>
 
-    <!--Feedback form-->
+    <!--contact info-->
+    <h2><u>Your Contact Info</u></h2>
+    <form action="action_page.php" method="get">
+        <p>Leave your contact details here!</p>
+        <label for="fullname">full name:</label>
+        <input type="text" id="fullname" name="fullname">
+        <br><br>
+        <label for="email">email:</label>
+        <input type="email" id="email" name="email">
+        <br><br>
+        <div>
+            <label for="contact_method">Select an option:</label>
+            <select id="contact_method" name="contact_method">
+                <option value="option1">email</option>
+                <option value="option2">phone</option>
+                <option value="option3">none</option>
+            </select>
+        </div>
 
+        <br><br>
+        <input type="reset">
+        <input type="submit">
+    </form>
+
+
+
+
+
+    <!--Feedback form-->
     <h2><u>Feedback</u></h2>
     <form action="action_page.php" method="get">
 
