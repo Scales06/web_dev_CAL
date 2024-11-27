@@ -46,3 +46,39 @@ function currentSlide(n) {
     slideIndex = n - 1; // Set the current slide index
     showSlides(); // Show the updated slide
 }
+
+        function validateForm(event) {
+            // Get all input fields
+            const fullName = document.getElementById("fullname").value.trim();
+            const email = document.getElementById("email").value.trim();
+            const feedback = document.getElementById("feedback")?.value.trim();
+            const enquiries = document.getElementById("enquiries")?.value.trim();
+            const message = document.getElementById("message")?.value.trim();
+
+            // Regular expressions for validation
+            const nameRegex = /^[a-zA-Z\s]+$/;
+            const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+
+            // Validation logic
+            if (fullName && !nameRegex.test(fullName)) {
+                alert("Full name must contain only letters and spaces.");
+                event.preventDefault();
+                return false;
+            }
+
+            if (email && !emailRegex.test(email)) {
+                alert("Please enter a valid email address.");
+                event.preventDefault();
+                return false;
+            }
+
+            if ((feedback !== undefined && feedback === "") ||
+                (enquiries !== undefined && enquiries === "") ||
+                (message !== undefined && message === "")) {
+                alert("Please fill out all text areas.");
+                event.preventDefault();
+                return false;
+            }
+
+            return true;
+        }
