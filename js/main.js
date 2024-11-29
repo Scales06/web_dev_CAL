@@ -128,13 +128,13 @@ function currentSlide(n) {
                 (enquiries !== undefined && enquiries === "") &&
                 (message !== undefined && message === ""))
                 {
-                    contact_details_user_feedback = "Please write your message.";
+                    contact_details_user_feedback = "Contact details input are correct. Please write your message now.";
                     event.preventDefault();
                     document.getElementById("contact_details_user_feedback").innerHTML = "<u>" + contact_details_user_feedback + "</u>";
 
                     setTimeout(function() {
                         document.getElementById("contact_details_user_feedback").innerHTML = "";
-                    }, 3000);
+                    }, 6000);
 
                     return false;
                 }
