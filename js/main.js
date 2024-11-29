@@ -49,6 +49,11 @@ function currentSlide(n) {
 
         function validateForm(event) {
             // Get all input fields
+            let contact_details_user_feedback;
+            let user_feedback_1;
+            let user_feedback_2;
+            let user_feedback_3;
+
             const fullName = document.getElementById("fullname").value.trim();
             const email = document.getElementById("email").value.trim();
             const feedback = document.getElementById("feedback")?.value.trim();
@@ -61,24 +66,79 @@ function currentSlide(n) {
 
             // Validation logic
             if (fullName && !nameRegex.test(fullName)) {
-                alert("Full name must contain only letters and spaces.");
+                contact_details_user_feedback = "Full name must only contain letters and spaces.";
                 event.preventDefault();
-                return false;
             }
 
             if (email && !emailRegex.test(email)) {
-                alert("Please enter a valid email address.");
+                contact_details_user_feedback = "Please enter a valid email address.";
                 event.preventDefault();
+            }
+
+            if ((fullName && !nameRegex.test(fullName)) ||
+                (email && !emailRegex.test(email)))
+            {
+                document.getElementById("contact_details_user_feedback").innerHTML = "<u>" + contact_details_user_feedback + "</u>";
+
+                setTimeout(function() {
+                    document.getElementById("contact_details_user_feedback").innerHTML = "";
+                }, 3000);
+
                 return false;
             }
 
-            if ((feedback !== undefined && feedback === "") ||
-                (enquiries !== undefined && enquiries === "") ||
-                (message !== undefined && message === "")) {
-                alert("Please fill out all text areas.");
-                event.preventDefault();
-                return false;
-            }
+            if ((fullName !== undefined && fullName === "") ||
+                (email !== undefined && email === ""))
+            {   
+                if (!(feedback !== undefined && feedback === ""))
+                {
+                    user_feedback_1 = "Please fill out your contact details.";
+                    event.preventDefault();
+                }
 
+                if (!(enquiries !== undefined && enquiries === ""))
+                    {
+                        user_feedback_2 = "Please fill out your contact details.";
+                        event.preventDefault();
+                    }
+
+                if (!(message !== undefined && message === ""))
+                    {
+                        user_feedback_3 = "Please fill out your contact details.";
+                        event.preventDefault();
+                    }
+
+                
+                document.getElementById("user_feedback_1").innerHTML = "<u>" + user_feedback_1 + "</u>";
+                document.getElementById("user_feedback_2").innerHTML = "<u>" + user_feedback_2 + "</u>";
+                document.getElementById("user_feedback_3").innerHTML = "<u>" + user_feedback_3 + "</u>";
+
+                setTimeout(function() {
+                    document.getElementById("user_feedback_1").innerHTML = "";
+                    document.getElementById("user_feedback_2").innerHTML = "";
+                    document.getElementById("user_feedback_3").innerHTML = "";
+                }, 3000);
+
+                return false;
+                
+            }
+            else
+            {
+                if ((feedback !== undefined && feedback === "") &&
+                (enquiries !== undefined && enquiries === "") &&
+                (message !== undefined && message === ""))
+                {
+                    contact_details_user_feedback = "Please write your message.";
+                    event.preventDefault();
+                    document.getElementById("contact_details_user_feedback").innerHTML = "<u>" + contact_details_user_feedback + "</u>";
+
+                    setTimeout(function() {
+                        document.getElementById("contact_details_user_feedback").innerHTML = "";
+                    }, 3000);
+
+                    return false;
+                }
+            }
+            
             return true;
         }

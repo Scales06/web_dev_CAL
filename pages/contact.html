@@ -39,7 +39,7 @@
 
     <!-- Contact Info -->
     <h2><u>Your Contact Info</u></h2>
-    <form action="action_page.php" method="get" onsubmit="return validateForm(event)">
+    <form action="" method="post" onsubmit="return validateForm(event)">
         <p>Leave your contact details here!</p>
         <label for="fullname">Full name:</label>
         <input type="text" id="fullname" name="fullname" required>
@@ -58,6 +58,8 @@
         <input type="submit">
     </form>
 
+    <p id="contact_details_user_feedback"></p>
+
     <!-- Feedback Form -->
     <h2><u>Feedback</u></h2>
     <form action="action_page.php" method="get" onsubmit="return validateForm(event)">
@@ -68,6 +70,7 @@
         <input type="reset">
         <input type="submit">
     </form>
+    <p id="user_feedback_1"></p>
 
     <!-- Enquiries Form -->
     <h2><u>Enquiries</u></h2>
@@ -79,6 +82,7 @@
         <input type="reset">
         <input type="submit">
     </form>
+    <p id="user_feedback_2"></p>
 
     <!-- Message Form -->
     <h2><u>Message me</u></h2>
@@ -90,6 +94,8 @@
         <input type="reset">
         <input type="submit">
     </form>
+    <p id="user_feedback_3"></p>
+
 </body>
 <hr id="make_ruler_bottom">
 <footer class="hover-scale">
