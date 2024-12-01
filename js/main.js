@@ -21,9 +21,16 @@ function showSlides() {
 
     // Move to the next slide
     slideIndex++;
+    
     if (slideIndex > slides.length) {
         slideIndex = 1; // Wrap around to the first slide
     }
+    else if (slideIndex < 1)
+    {
+        slideIndex = 3; // Wrap around to the last slide
+    }
+
+
 
     // Display the current slide and activate the corresponding dot
     slides[slideIndex - 1].style.display = "block";
