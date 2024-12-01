@@ -49,10 +49,10 @@ function currentSlide(n) {
 
         function validateForm(event) {
             // Get all input fields
-            let contact_details_user_feedback;
-            let user_feedback_1;
-            let user_feedback_2;
-            let user_feedback_3;
+            let contact_details_user_feedback = "";
+            let user_feedback_1 = "";
+            let user_feedback_2 = "";
+            let user_feedback_3 = "";
 
             const fullName = document.getElementById("fullname").value.trim();
             const email = document.getElementById("email").value.trim();
@@ -87,6 +87,7 @@ function currentSlide(n) {
                 return false;
             }
 
+            // When contact details aren't filled out
             if ((fullName !== undefined && fullName === "") ||
                 (email !== undefined && email === ""))
             {   
@@ -109,9 +110,9 @@ function currentSlide(n) {
                     }
 
                 
-                document.getElementById("user_feedback_1").innerHTML = "<u>" + user_feedback_1 + "</u>";
-                document.getElementById("user_feedback_2").innerHTML = "<u>" + user_feedback_2 + "</u>";
-                document.getElementById("user_feedback_3").innerHTML = "<u>" + user_feedback_3 + "</u>";
+                document.getElementById("user_feedback_1").innerHTML = user_feedback_1;
+                document.getElementById("user_feedback_2").innerHTML = user_feedback_2;
+                document.getElementById("user_feedback_3").innerHTML = user_feedback_3;
 
                 setTimeout(function() {
                     document.getElementById("user_feedback_1").innerHTML = "";
