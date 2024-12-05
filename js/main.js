@@ -1,33 +1,33 @@
 let slideIndex = 0; // Initial slide index
-let timer; // Timer for automatic slide change
+let timer;
 
-// Start the carousel
+//Start the carousel
 showSlides();
 
-// Function to display slides
+//Function to display slides
 function showSlides() {
     let slides = document.getElementsByClassName("mySlides");
     let dots = document.getElementsByClassName("dot");
 
-    // Hide all slides
+    //Hide all slides
     for (let i = 0; i < slides.length; i++) {
         slides[i].style.display = "none";
     }
 
-    // Deactivate all dots
+    //Deactivate all dots
     for (let i = 0; i < dots.length; i++) {
         dots[i].className = dots[i].className.replace(" active", "");
     }
 
-    // Move to the next slide
+    //Move to the next slide
     slideIndex++;
     
     if (slideIndex > slides.length) {
-        slideIndex = 1; // Wrap around to the first slide
+        slideIndex = 1; 
     }
     else if (slideIndex < 1)
     {
-        slideIndex = 3; // Wrap around to the last slide
+        slideIndex = 3; 
     }
 
 
@@ -37,21 +37,21 @@ function showSlides() {
     dots[slideIndex - 1].className += " active";
 
     // Set the timer for automatic slide change
-    timer = setTimeout(showSlides, 3000); // Change slide every 3 seconds
+    timer = setTimeout(showSlides, 3000); 
 }
 
 // Function to manually navigate to the next or previous slide
 function plusSlides(n) {
-    clearTimeout(timer); // Clear the timer to prevent conflicts
-    slideIndex += n - 1; // Adjust slide index
-    showSlides(); // Show the updated slide
+    clearTimeout(timer); 
+    slideIndex += n - 1; 
+    showSlides(); 
 }
 
 // Function to set a specific slide based on its index
 function currentSlide(n) {
-    clearTimeout(timer); // Clear the timer to prevent conflicts
-    slideIndex = n - 1; // Set the current slide index
-    showSlides(); // Show the updated slide
+    clearTimeout(timer); 
+    slideIndex = n - 1; 
+    showSlides(); 
 }
 
         function validateForm(event) {
